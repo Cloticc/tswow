@@ -2,7 +2,7 @@
   "module": {
   	"type":"commonjs"
   },
-  "exclude":[".*.js$","typescript2cxx","wotlkdata","addons"],
+  "exclude":[".*.js$","typescript2cxx","wowdata","addons"],
   "jsc": {
     "parser": {
       "syntax": "typescript",

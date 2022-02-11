@@ -243,7 +243,7 @@ export function InstallPath(pathIn: string, tdb: string) {
             typescript_js: file('typescript/lib/tsc'),
             tstl_decorators: file('typescript-to-lua/dist/transformation/visitors/class/decorators.js'),
             tstl_js: file('typescript-to-lua/dist/tstl.js'),
-            wotlkdata: dir({}),
+            wowdata: dir({}),
         }),
 
         node_conf: file('node.conf'),
@@ -285,10 +285,10 @@ export function InstallPath(pathIn: string, tdb: string) {
                         main_js: file('main.js'),
                     })
                 }),
-                wotlkdata: dir({
+                wowdata: dir({
                     package_json: file('package.json'),
-                    wotlkdata: dir({
-                        index: file('wotlkdata.js')
+                    wowdata: dir({
+                        index: file('wowdata.js')
                     })
                 }),
                 snippets_example: file('snippets-example.ts'),
@@ -431,7 +431,7 @@ export function BuildPaths(pathIn: string, tdb: string) {
         ClientExtensionsDll: file('ClientExtensions.dll'),
         scripts_config: dirn('scripts-config',{
             typescript2cxx: dir({}),
-            wotlkdata: dir({}),
+            wowdata: dir({}),
             runtime: dir({}),
             addons: dir({})
         }),
@@ -627,7 +627,7 @@ export function SourcePaths(pathIn: string) {
         }),
         tswow_scripts: dirn('tswow-scripts', {
             sql: dir({}),
-            wotlkdata: dir({
+            wowdata: dir({
                 package_json: file('package.json')
             }),
             runtime: dir({}),

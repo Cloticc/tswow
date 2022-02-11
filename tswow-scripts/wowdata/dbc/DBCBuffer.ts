@@ -15,7 +15,7 @@
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
 import * as fs from 'fs';
-import { GetStage } from '../wotlkdata';
+import { GetStage } from '../wowdata';
 
 export class DBCBuffer {
     private rows: Buffer = Buffer.alloc(0);
